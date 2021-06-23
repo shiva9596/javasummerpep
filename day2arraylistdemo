@@ -1,0 +1,84 @@
+/*	ArrayListDemo.java
+	This program used to explain the ArrayList class and the methods associated with it.
+
+*/
+
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.ListIterator;
+import java.util.Collections;
+import java.util.Random;
+
+
+public class ArrayListDemo {
+   
+    public void doArrayListDemo() {
+
+        final int MAX = 10;
+        int counter = 0;
+
+        List listA = new ArrayList(); // creates a list
+        List listB = new ArrayList();
+
+        for (int i = 0; i < MAX; i++) {
+            System.out.println("  - Storing Integer(" + i + ")");
+            listA.add(new Integer(i));  // adding elements to the list
+        }
+
+        System.out.println("  - Storing String(Alex)");
+        listA.add("Alex");				// adding string elements to the list
+
+        System.out.println("  - Storing String(Melody)");
+        listA.add("Melody");
+
+        System.out.println("  - Storing String(Jeff)");
+        listA.add("Jeff");
+
+        System.out.println("  - Storing String(Alex)");
+        listA.add("Alex");
+
+        
+        System.out.println("Contents of ListA");
+        for (int j=0; j < listA.size(); j++) {
+            System.out.println("[" + j + "] - " + listA.get(j));
+        }
+
+
+        int locationIndex = listA.indexOf("Jeff");   // to find the index of an element
+        System.out.println("Index location of the String \"Jeff\" is: " + locationIndex);  
+
+        System.out.println("First occurance search for String \"Alex\".  Index =  " + listA.indexOf("Alex"));
+        System.out.println("Last Index search for String \"Alex\".       Index =  " + listA.lastIndexOf("Alex"));
+
+        List listSub = listA.subList(10, listA.size());
+        System.out.println("New Sub-List from index 10 to " + listA.size() + ": " + listSub);
+
+
+        System.out.println("List sorting");
+		System.out.println("Original List   : " + listSub);
+        Collections.sort(listSub);
+        System.out.println("New Sorted List : " + listSub);
+        System.out.println();
+
+		System.out.println("Reversing");
+        System.out.println("Original List     : " + listSub);
+        Collections.reverse(listSub);
+        System.out.println("New Reversed List : " + listSub);
+        System.out.println();
+
+
+
+        System.out.println("Is List A empty?   " + listA.isEmpty());
+        System.out.println("Is List B empty?   " + listB.isEmpty());
+        System.out.println("Is Sub-List empty? " + listSub.isEmpty());
+    }
+
+
+    public static void main(String[] args) {
+        ArrayListDemo listExample = new ArrayListDemo();
+        listExample.doArrayListDemo();
+    }
+
+}
+
