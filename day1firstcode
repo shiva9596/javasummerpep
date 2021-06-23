@@ -1,0 +1,16 @@
+class Student{
+//defining the fields
+//My Data member fields 
+int id;
+String name;
+public static void main(String aa[]){
+
+Student student=new Student();
+student.id=101;
+student.name="shiva";
+
+System.out.println(student.id);
+System.out.println(student.name);
+
+}
+}
