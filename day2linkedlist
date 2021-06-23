@@ -1,0 +1,24 @@
+import java.util.*;
+class MyLinkedListDemo{
+public static void main(String args[]){
+ LinkedList<String> ll=new LinkedList<String>();
+  ll.add("Anjana");
+  ll.add("Renuka");
+  ll.add("Manoj");
+  
+  Iterator<String> itr=ll.iterator();
+   while(itr.hasNext()){
+    System.out.println("My Linked List "+itr.next());
+   }
+
+
+
+}
+
+}
+
+
+output:-
+My Linked List Anjana
+My Linked List Renuka
+My Linked List Manoj
