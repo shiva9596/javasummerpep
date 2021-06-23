@@ -1,0 +1,27 @@
+import java.util.*;
+class MyArrayList{
+public static void main(String arr[]){
+//ArrayList class implements the List interface;
+ArrayList<String> list= new ArrayList<String>();
+//Create a simple list
+list.add("Anjana");
+list.add("Renuka");
+list.add("Manoj");
+list.add("Praveen");
+
+//Traversing list
+
+Iterator itr=list.iterator();
+while(itr.hasNext()){
+ System.out.println(itr.next());
+
+}
+
+
+ 
+
+
+
+}
+
+}
