@@ -1,0 +1,25 @@
+import java.util.*;
+class DequeDemo{
+public static void main(String args[]){
+
+Deque<String> dq=new ArrayDeque<String>();
+dq.add("Anjana");
+dq.add("Renuka");
+dq.add("Bhavana");
+dq.add("Santosh");
+
+//for(String ss; ss<dq.length; ss++)
+for (String ss: dq){
+System.out.println("Deque values are"+ss);
+}
+
+
+
+}
+}
+
+output:-
+Deque values areAnjana
+Deque values areRenuka
+Deque values areBhavana
+Deque values areSantosh
