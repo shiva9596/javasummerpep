@@ -1,0 +1,46 @@
+import java.util.*;
+class MyPriorDemo{
+public static void main(String args[]){
+
+PriorityQueue<String> pq=new PriorityQueue<String>();
+pq.add("Anjana");
+pq.add("Renuka");
+pq.add("Manoj");
+pq.add("Vaishnov");
+System.out.println("My Queue Head"+pq.element());
+System.out.println("Head"+pq.peek());
+System.out.println("........................");
+Iterator itr=pq.iterator();
+while(itr.hasNext()){
+System.out.println(itr.next());
+
+}
+ pq.remove();
+ pq.poll();
+
+ Iterator<String> itrs=pq.iterator();
+  while(itrs.hasNext()){
+
+  System.out.println(itrs.next());
+  }
+
+
+ 
+
+
+
+
+}
+
+}
+
+output:-
+My Queue HeadAnjana
+HeadAnjana
+........................
+Anjana
+Renuka
+Manoj
+Vaishnov
+Renuka
+Vaishnov
