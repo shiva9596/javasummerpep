@@ -1,0 +1,21 @@
+import java.util.*;
+class MyArrayListDemo{
+
+public static void main(String args[]){
+ArrayList<String> al=new ArrayList<String>();// Create Arraylist
+al.add("Anjana");
+al.add("Renuka");
+al.add("Manoj");
+al.add("Praveen");
+// Traversing list through Iterator
+
+Iterator itr=al.iterator();
+ while(itr.hasNext()){
+  System.out.println("Array List Values "+itr.next());
+  
+}
+
+
+}
+
+}
