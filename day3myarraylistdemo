@@ -19,3 +19,10 @@ Iterator itr=al.iterator();
 }
 
 }
+
+
+output:-
+Array List Values Anjana
+Array List Values Renuka
+Array List Values Manoj
+Array List Values Praveen
